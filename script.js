@@ -98,15 +98,15 @@ function updateDiceFace() {
 function addDice() {
     const geometry = new THREE.BoxGeometry();
     const textureLoader = new THREE.TextureLoader();
-    const texture = ['https://drive.google.com/uc?export=view&id=1Jiz8hNT3JHowfRpBJX8AVEqajbHx8Fdf','https://drive.google.com/uc?export=view&id=17SDgt8SkpbOowjgMLQoYyWyiZ3mXP3ug','https://drive.google.com/uc?export=view&id=17SDgt8SkpbOowjgMLQoYyWyiZ3mXP3ug','https://drive.google.com/uc?export=view&id=12wPQgtkUyksY2oecHXgCZqdk8tA29fm1','https://drive.google.com/uc?export=view&id=1gCrFM1d4ZlD7_U1BQq6j26-oM1rJ13OR','https://drive.google.com/uc?export=view&id=1Zc-kcDvwp5LgW6Lf9-68oCqSHqygWZym']
+    const texture = ['https://drive.usercontent.google.com/download?id=1Jiz8hNT3JHowfRpBJX8AVEqajbHx8Fdf&export=view&authuser=0','https://drive.usercontent.google.com/download?id=17SDgt8SkpbOowjgMLQoYyWyiZ3mXP3ug&export=view&authuser=0','https://drive.usercontent.google.com/download?id=17SDgt8SkpbOowjgMLQoYyWyiZ3mXP3ug&export=view&authuser=0','https://drive.usercontent.google.com/download?id=12wPQgtkUyksY2oecHXgCZqdk8tA29fm1&export=view&authuser=0','https://drive.usercontent.google.com/download?id=1gCrFM1d4ZlD7_U1BQq6j26-oM1rJ13OR&export=view&authuser=0','https://drive.usercontent.google.com/download?id=1Zc-kcDvwp5LgW6Lf9-68oCqSHqygWZym&export=view&authuser=0']    
     
-    const materials = [
-        new THREE.MeshBasicMaterial({ map: textureLoader.load('dice1.png') }),
-        new THREE.MeshBasicMaterial({ map: textureLoader.load('dice2.png') }),
-        new THREE.MeshBasicMaterial({ map: textureLoader.load('dice3.png')}),
-        new THREE.MeshBasicMaterial({ map: textureLoader.load('dice4.png') }),
-        new THREE.MeshBasicMaterial({ map: textureLoader.load('dice5.png') }),
-        new THREE.MeshBasicMaterial({ map: textureLoader.load('dice6.png') })
+   const materials = [
+        new THREE.MeshBasicMaterial({ map: textureLoader.load(texture[0]) }),
+        new THREE.MeshBasicMaterial({ map: textureLoader.load(texture[1]) }),
+        new THREE.MeshBasicMaterial({ map: textureLoader.load(texture[2])}),
+        new THREE.MeshBasicMaterial({ map: textureLoader.load(texture[3]) }),
+        new THREE.MeshBasicMaterial({ map: textureLoader.load(texture[4]) }),
+        new THREE.MeshBasicMaterial({ map: textureLoader.load(texture[5]) })
     ];
 
     const diceMaterial = new THREE.MeshFaceMaterial(materials);
