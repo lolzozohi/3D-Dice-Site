@@ -98,9 +98,9 @@ function updateDiceFace() {
 function addDice() {
     const geometry = new THREE.BoxGeometry();
     const textureLoader = new THREE.TextureLoader();
-    const texture = ['https://drive.usercontent.google.com/download?id=1Jiz8hNT3JHowfRpBJX8AVEqajbHx8Fdf&export=view&authuser=0','https://drive.usercontent.google.com/download?id=17SDgt8SkpbOowjgMLQoYyWyiZ3mXP3ug&export=view&authuser=0','https://drive.usercontent.google.com/download?id=17SDgt8SkpbOowjgMLQoYyWyiZ3mXP3ug&export=view&authuser=0','https://drive.usercontent.google.com/download?id=12wPQgtkUyksY2oecHXgCZqdk8tA29fm1&export=view&authuser=0','https://drive.usercontent.google.com/download?id=1gCrFM1d4ZlD7_U1BQq6j26-oM1rJ13OR&export=view&authuser=0','https://drive.usercontent.google.com/download?id=1Zc-kcDvwp5LgW6Lf9-68oCqSHqygWZym&export=view&authuser=0']    
-    
-   const materials = [
+    const texture =['https://imgur.com/a/2eMhMu5' ,'https://imgur.com/a/SxBGO5x','https://imgur.com/a/YCOuBb0','https://imgur.com/a/BJWDMXq','https://imgur.com/a/Ui7kkg9','https://imgur.com/a/xzTKTC2']    
+  
+    const materials = [
         new THREE.MeshBasicMaterial({ map: textureLoader.load(texture[0]) }),
         new THREE.MeshBasicMaterial({ map: textureLoader.load(texture[1]) }),
         new THREE.MeshBasicMaterial({ map: textureLoader.load(texture[2])}),
