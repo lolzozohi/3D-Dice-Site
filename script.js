@@ -98,8 +98,8 @@ function updateDiceFace() {
 function addDice() {
     const geometry = new THREE.BoxGeometry();
     const textureLoader = new THREE.TextureLoader();
-    const texture =['https://imgur.com/a/2eMhMu5' ,'https://imgur.com/a/SxBGO5x','https://imgur.com/a/YCOuBb0','https://imgur.com/a/BJWDMXq','https://imgur.com/a/Ui7kkg9','https://imgur.com/a/xzTKTC2']    
-  
+    const texture =['https://i.imgur.com/5Pk9VxN.png' ,'https://i.imgur.com/L1KhYda.png','https://i.imgur.com/lakDWQt.png','https://i.imgur.com/35IaQaK.png','https://i.imgur.com/aH3j7oV.png','https://i.imgur.com/40Jwirj.png']  
+
     const materials = [
         new THREE.MeshBasicMaterial({ map: textureLoader.load(texture[0]) }),
         new THREE.MeshBasicMaterial({ map: textureLoader.load(texture[1]) }),
